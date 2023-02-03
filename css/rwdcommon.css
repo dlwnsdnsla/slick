@@ -1,0 +1,325 @@
+@charset "utf-8";
+
+
+
+@media screen and (max-width:1024px) {
+
+    #header {
+        height: 60px;
+        
+    }
+    #header:hover {
+        background: rgba(255,255,255,1);
+    }
+    
+
+    #header .logobox {
+        width: 125px;
+        height: 31px;
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+
+
+    #header .logobox .logo{
+        background: url(../img/logo-m.png);
+        width: 125px;
+        height: 31px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #header:hover .logobox .logo {
+        background: url(../img/logo-m.png);
+    }
+    #header:hover .logobox img {
+        display: block;
+    }
+    #header.on .logobox .logo {
+        background: none;
+    }
+    #header.on .logobox img {
+        display: block;
+    }
+
+
+    #header .headerbox:hover #nav .navbox .box_bg{
+        display: none;
+        border-top: 1px solid rgb(92, 92, 92, 0.2);
+    }
+    #header .depth1 {
+        display: none;
+    }
+
+    .open .bar {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        cursor: pointer;
+    }
+    .open .bar .bartop {
+        width: 20px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        top: 0;
+    }
+    .open .bar .barmiddle {
+        width: 14px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+    #header .row .open .bar .barbottom {
+        width: 20px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        bottom: 0;
+    }
+    #header:hover .row .open .bar .bartop {
+        background: #000;
+    }
+    #header:hover .row .open .bar .barmiddle {
+        background: #000;
+    }
+    #header:hover .row .open .bar .barbottom {
+        background: #000;
+    }
+    #header.on .row .open .bar .bartop {
+        background: #000;
+    }
+    #header.on .row .open .bar .barmiddle {
+        background: #000;
+    }
+    #header.on .row .open .bar .barbottom {
+        background: #000;
+    }
+
+    .open {
+        position: absolute;
+        top: 30px;
+        right: 20px;
+    }
+
+    .m_menu .m_depth1 {
+        font-size: 24px;
+        color: #555555;
+        font-weight: bold;
+        padding: 0px 10px;
+    }
+    
+    .m_menu .m_depth1 ul{
+        font-size: 13px;
+        color: #777777;
+        display: none;
+    }
+
+    .close {
+        top: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+    }
+    .close .bartop {
+        width: 20px;
+        height: 3px;
+    }
+    .close .barbottom {
+        width: 20px;
+        height: 3px;
+        top: 14px;
+        left: -2px;
+    }
+
+
+
+    #footer .footer_wrap {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #footer .footer_logo {
+        width: 100%;
+        height: 81px;
+    }
+    #footer .footer_logo .logobox {
+        margin: 0 auto;
+        width: 85px;
+    }
+
+
+    #footer .fnb {
+        position: static;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        transition: all 0.3s;
+
+    }
+    #footer .fnb li {
+        color: #ddd;
+        font-weight: bold;
+        font-size: 15px;
+        transition: all 0.3s;
+    }
+
+    #footer .sns {
+        position: static;
+        text-align: center;
+        padding: 15px 0;
+        transition: all 0.3s;
+    }
+    #footer .address {
+        overflow: hidden;
+        position: static;
+        text-align: center;
+        margin: 0;
+        transition: all 0.3s;
+    }
+    #footer .address li {
+        width: 100%;
+        padding-top: 5px;
+        transition: all 0.3s;
+    }
+    #footer .address>.add2 li {
+        padding: 0;
+        padding-top: 5px;
+        margin-right: 0px;
+        transition: all 0.3s;
+    }
+    #footer .address span {
+        display: none;
+    }
+    #footer .copy {
+        padding-top: 5px;
+        margin: 0;
+        text-align: center;
+        transition: all 0.3s;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    #header {
+        height: 60px;
+    }
+    #header:hover {
+        background: rgba(255,255,255,1);
+    }
+
+    #header .logobox {
+        width: 125px;
+        height: 31px;
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+    #header:hover .logobox img {
+        display: block;
+    }
+
+
+    #header .logobox .logo{
+        background: url(../img/logo-m.png);
+        width: 125px;
+        height: 31px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #header:hover .logobox .logo {
+        background: url(../img/logo-m.png);
+        display: block;
+    }
+
+
+    #header .headerbox:hover #nav .navbox .box_bg{
+        display: none;
+        border-top: 1px solid rgb(92, 92, 92, 0.2);
+    }
+    #header .depth1 {
+        display: none;
+    }
+
+    .open .bar {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        cursor: pointer;
+    }
+    .open .bar .bartop {
+        width: 20px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        top: 0;
+    }
+    .open .bar .barmiddle {
+        width: 14px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+    #header .row .open .bar .barbottom {
+        width: 20px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .open {
+        position: absolute;
+        top: 30px;
+        right: 20px;
+    }
+
+    .m_menu .m_depth1 {
+        font-size: 18px;
+        color: #555555;
+        font-weight: bold;
+        padding: 0px 10px;
+    }
+    
+    .m_menu .m_depth1 ul{
+        font-size: 11px;
+        color: #777777;
+        display: none;
+    }
+
+    .close {
+        top: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+    }
+    .close .bartop {
+        width: 20px;
+        height: 3px;
+    }
+    .close .barbottom {
+        width: 20px;
+        height: 3px;
+        top: 14px;
+        left: -2px;
+    }
+
+    #footer .address ul li:nth-child(2) {
+        padding-left: 28px;
+    }
+    
+
+ }
