@@ -1,10 +1,8 @@
 @charset "utf-8";
 
-
-
-
 @media screen and (max-width:1024px) {
 
+                                /* 컨텐츠 공통 적용 */
     article {
         padding-bottom: 30px;
         overflow: hidden;
@@ -13,6 +11,7 @@
         opacity: 1;
         margin-top: 0px;
         padding-top: 0px;
+        transform: scale(1);
     }
     .topbx h2 {
         font-size: 30px;
@@ -22,21 +21,10 @@
         padding: 10px 0 30px 0;
         margin-bottom: 0px;
     }
-
-    .cont1 .slider .slider_text h2 {
-        font-size: 36px;
-        line-height: 40px;
-        padding: 0px 0px 20px;
-    }
-    .cont1 .slider .slider_text p {
-        font-size: 15px;
-        padding-top: 10px;
-    }
     .cont .cont_box h2{
         font-size: 30px;
         color: #333;
         padding: 50px 0 0 0;
-    
     }
     .cont_box p {
         font-size: 16px;
@@ -44,8 +32,6 @@
         color: #888;
         padding: 15px 0 40px 0;
     }
-
-
     .cont_box {
         width: 24%;
         float: left;
@@ -53,12 +39,9 @@
         transition: all 0.3s;
         margin-bottom: 2%;
     }
-
     .cont .imgbox_wrap {
         width: 98%;
     }
-
-
     .imgbox_wrap {
         width: 98%;
         margin: 0 auto;
@@ -80,6 +63,39 @@
         padding: 20px 0 0 5px;
     }
 
+                                /* 슬라이더 */
+    .cont1 .slider .slick-prev { 
+        font-size: 40px;
+    }
+    .cont1 .slider .slick-next { 
+        font-size: 40px;
+    }
+    #section .cont1 .slide .slide_text h2 {
+        font-size: 36px;
+    }
+    .cont1 .slide .slide_text p {
+        font-size: 13px;
+    }
+    .cont1 .slick-arrow {
+        font-size: 30px;
+    }
+                                /* 컨텐츠구역 1 */
+    .cont1 {
+        padding-bottom: 30px;
+    }
+
+                                /* 컨텐츠구역 3 */
+    .cont3 .imgbox_box h3 {
+        font-size: 30px;
+    }
+    .cont3 .imgbox_box p {
+        font-size: 14px;
+    }
+    .cont3 .imgbox_box {
+        width: 100%;
+    }
+
+                                /* 컨텐츠구역 4 */
     .cont4_left {
         width: 100%;
         float: left;
@@ -93,7 +109,7 @@
         transition: all 0.3s;
     }
 
-
+                                /* 컨텐츠구역 6 */
     .cont6 a {
         width: 49%;
         margin-right: 0.5%;
@@ -106,42 +122,21 @@
         margin-right: 0px;
     }
 
+                                /* 버튼 */
     .gotop {
         width: 0;
     }
-
-    .bx-wrapper img {
-        height:400px;
-      }
 }
-
-
-
-
-
 
 @media screen and (max-width:768px) {
 
-
-    .cont1 .slider .slider_text h2 {
-        font-size: 30px;
-        line-height: 30px;
-        padding: 0px 0px 20px;
-    }
-    .cont1 .slider .slider_text p {
-        font-size: 13px;
-        padding-top: 10px;
-    }
-
-
-
+                                /* 컨텐츠 공통 적용 */
     .cont .cont_box {
         width: 49%;
         float: left;
         margin-right: 2%;
         transition: all 0.2s;
     }
-
     .cont .cont_box:nth-child(2) {
         margin-right: 0px;
     }
@@ -160,7 +155,6 @@
         padding: 50px 0 0 0;
     
     }
-
     .cont .cont_box h3 {
         font-size: 16px;
         font-weight: bold;
@@ -175,11 +169,38 @@
         margin: 10px 0 20px 0;
     }
 
+                                /* 슬라이더 */
+    #section .slide { 
+        height:80vw; 
+    }
+    #section .cont1 .slide .slide_text h2 {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    .cont1 .slide .slide_text p {
+        line-height: 14px;
+        font-size: 12px;
+    }
+    .cont1 .slick-arrow {
+        font-size: 20px;
+    }
+
+                                /* 컨텐츠구역 3 */
+    .cont3 .imgbox_box h3 {
+        font-size: 25px;
+    }
+    .cont3 .imgbox_box p {
+        font-size: 12px;
+    }
+
+                                /* 컨텐츠구역 4 */
     .cont4_back {
         width: 98%;
         margin: 0 auto;
         transition: all 0.3s;
     }
+
+                                /* 컨텐츠구역 6 */
     .cont6 a {
         width: 49%;
         margin-right: 0.5%;
@@ -191,9 +212,4 @@
         margin-top: 5px;
         margin-right: 0px;
     }
-
-    .bx-wrapper img {
-        height:300px;
-      }
-
 }
